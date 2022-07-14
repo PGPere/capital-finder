@@ -10,6 +10,7 @@ class handler(BaseHTTPRequestHandler):
         url_components = parse.urlsplit(s)
         query_string_list = parse.parse_qsl(url_components.query)
         dic = dict(query_string_list)
+        print(dic)
 
         if "name" in dic:
             url = "https://restcountries.com/v2/name/{name}"
