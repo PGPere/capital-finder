@@ -15,12 +15,11 @@ class handler(BaseHTTPRequestHandler):
             url = "https://restcountries.com/v2/name/{name}"
             r = requests.get(url + dic["name"])
             data = r.json()
-            print(data)
             # definitions = []
             # for name_data in data:
             #     definition = name_data["meanings"][0]["definitions"][0]["definition"]
             #     definitions.append(definition)
-            message = str(data[0].capital)
+            message = str(data[0].name)
 
         else:
             message = "Give me a capital"
