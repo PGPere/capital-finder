@@ -20,7 +20,7 @@ class handler(BaseHTTPRequestHandler):
             # for name_data in data:
             #     definition = name_data["meanings"][0]["definitions"][0]["definition"]
             #     definitions.append(definition)
-            # message = str(data[0].capital)
+            message = str(data[0].capital)
 
         else:
             message = "Give me a capital"
