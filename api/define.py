@@ -13,7 +13,7 @@ class handler(BaseHTTPRequestHandler):
         print(dic)
 
         if "name" in dic:
-            url = "https://restcountries.com/v2/"
+            url = "https://restcountries.com/v2"
             r = requests.get(url + dic["name"])
             data = r.json()
             # definitions = []
