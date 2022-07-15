@@ -1,10 +1,10 @@
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
-import requests
+import requests as re
 
 
 class handler(BaseHTTPRequestHandler):
-    # http://localhost:3000/api/define?word=python
+
     def do_GET(self):
         s = self.path
         url_components = parse.urlsplit(s)
