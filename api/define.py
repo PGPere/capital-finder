@@ -13,14 +13,15 @@ class handler(BaseHTTPRequestHandler):
         print('peru')
 
         if "name" in dic:
-            url = "https://restcountries.com/v2"
+            url = "https://restcountries.com/v3.1/name/"
             r = requests.get(url + dic["name"])
             data = r.json()
             # definitions = []
             # for name_data in data:
             #     definition = name_data["meanings"][0]["definitions"][0]["definition"]
             #     definitions.append(definition)
-            message = str(data[0].name)
+            # message = str(data[0].name)
+            message = "Testing"
 
         else:
             message = "Give me a capital"
